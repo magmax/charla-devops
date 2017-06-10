@@ -18,6 +18,9 @@
       padding-left: 10px;
       padding-right: 10px;
       }
+      .myslide {
+        background-color: #fff;
+      }
     </style>
   </head>
 
@@ -36,144 +39,165 @@
 
         <section>
             <h2>Definición</h2>
-            <p>DevOps es un acrónimo inglés de development (desarrollo) y operations (operaciones), que se refiere a una cultura o movimiento que se centra en la comunicación, colaboración e integración entre desarrolladores de software y los profesionales en las tecnologías de la información (IT). Automatiza el proceso de entrega del software y los cambios en la infraestructura. Su objetivo es ayudar a crear un entorno donde la construcción, prueba y lanzamiento de un software pueda ser más rápido y con mayor fiabilidad.</p>
-            <p>(Wikipedia)</p>
+            <div class="myslide">
+                <p>DevOps es un acrónimo inglés de development (desarrollo) y operations (operaciones), que se refiere a una cultura o movimiento que se centra en la comunicación, colaboración e integración entre desarrolladores de software y los profesionales en las tecnologías de la información (IT). Automatiza el proceso de entrega del software y los cambios en la infraestructura. Su objetivo es ayudar a crear un entorno donde la construcción, prueba y lanzamiento de un software pueda ser más rápido y con mayor fiabilidad.</p>
+                <p>(Wikipedia)</p>
+            </div>
         </section>
 
         <section>
-            <h2>¿Qué significa DevOps?</h2>
-            <ul>
-                <li class="fragment">DEV -> Development</li>
-                <li class="fragment">OPS -> Operations</li>
-            </ul>
-            <img class="fragment" src="images/devops-gear.png" style="background: white"></img>
+            <p>En realidad... ¿Qué significa DevOps?</p>
         </section>
 
         <section>
-            <h2>Ciclo de vida clásico</h2>
-            <table>
-                <tr class="fragment">
-                    <td>Negocio</td>
-                    <td>Dev</td>
-                    <td>Ops</td>
-                <tr class="fragment">
-                    <td><img src="images/time-money.jpg" style="width:200px;height:200px;background:white"></img></td>
-                    <td><img src="images/calendar-dev-old.png" style="width:200px;height:200px;background:white"></img></td>
-                    <td><img src="images/calendar-ops-old.png" style="width:200px;height:200px;background:white"></img></td>
-                </tr>
-                <tr class="fragment">
-                    <td>Innovación</td>
-                    <td>Waterfall</td>
-                    <td>Si funciona, <br/>no lo toques</td>
-                </tr>
-            </table>
+            <h2>Frecuencia de despliegue</h2>
+            <div class="myslide">
+                <table>
+                    <thead>
+                        <tr class="fragment">
+                            <th>Empresa</th>
+                            <th>Frecuencia</th>
+                            <th>Tiempo espera</th>
+                            <th>Fiabilidad</th>
+                            <th>Respuesta a cliente</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="fragment">
+                            <td>Empresa típica</td>
+                            <td>1 cada 9 meses</td>
+                            <td>meses o trimestres</td>
+                            <td>baja/media</td>
+                            <td>baja/media</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>Twitter</td>
+                            <td>3/semana</td>
+                            <td>horas</td>
+                            <td>alto</td>
+                            <td>alto</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>Facebook</td>
+                            <td>1/día</td>
+                            <td>horas</td>
+                            <td>alto</td>
+                            <td>alto</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>Netflix</td>
+                            <td>500/día</td>
+                            <td>minutos</td>
+                            <td>alto</td>
+                            <td>alto</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>Google</td>
+                            <td>5,500/día</td>
+                            <td>minutos</td>
+                            <td>alto</td>
+                            <td>alto</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>Amazon</td>
+                            <td>23,000/día</td>
+                            <td>minutos</td>
+                            <td>alto</td>
+                            <td>alto</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <section>
+            <h2>DevOps</h2>
+
+            <p>DevOps es el catalizador que permite realizar 
+            <br/>23.000 despliegues al día</p>
         </section>
 
         <section>
-            <h2>Ciclo de vida clásico</h2>
-            <ul>
-                <li class="fragment">Lenta respuesta a negocio</li>
-                <li class="fragment">Clientes descontentos</li>
-                <li class="fragment">UX pobre</li>
-                <li class="fragment">Reducida capacidad de competencia</li>
-                <li class="fragment">Recursos malgastados</li>
-                <li class="fragment">Pérdida de productividad</li>
-                <li class="fragment">Costes y riesgos altos</li>
-                <li class="fragment">Desarrolladores desmotivados</li>
-                <li class="fragment">tiempos de respuesta deficientes (seguridad)</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Nuevo enfoque</h2>
-            <table>
-                <tr class="fragment">
-                    <td>Negocio</td>
-                    <td>Dev</td>
-                    <td>Ops</td>
-                <tr class="fragment">
-                    <td><img src="images/time-money.jpg" style="width:200px;height:200px;background:white"></img></td>
-                    <td><img src="images/calendar-new.png" style="width:200px;height:200px;background:white"></img></td>
-                    <td><img src="images/calendar-new.png" style="width:200px;height:200px;background:white"></img></td>
-                </tr>
-                <tr class="fragment">
-                    <td>Innovación</td>
-                    <td>Scrum</td>
-                    <td>Despliegue contínuo</td>
-                </tr>
-            </table>
-        </section>
-
-        <section>
-            <h2>Nuevo enfoque</h2>
-            <ul>
-                <li class="fragment">Rápida respuesta a negocio</li>
-                <li class="fragment">Clientes más contentos</li>
-                <li class="fragment">La UX forma parte del ciclo</li>
-                <li class="fragment">Más competitividad</li>
-                <li class="fragment">Recursos mejor aprovechados</li>
-                <li class="fragment">Reducción de costes y riesgos</li>
-                <li class="fragment">Desarrolladores más motivados</li>
-                <li class="fragment">tiempos de respuesta rápidos</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>¿Cómo se consigue?</h2>
-            <ul>
-                <img class="fragment" src="images/devops-cycle.png" style="background:white"></img>
-            </ul>
-        </section>
-       
-        <section>
-            <h2>¿Cómo se consigue?</h2>
-            <ul>
-                <li class="fragment">Toda la compañía debe estar involucrada</li>
+            <h2>¿Por qué?</h2>
+            <ul class="myslide">
+                <li class="fragment">Reduce el <i>Time to market</i></li>
+                <li class="fragment">Menos tasa de errores en nuevas releases</li>
+                <li class="fragment">Los errores se corrigen más rápido</li>
+                <li class="fragment">Menor tiempo de recuperación medio</li>
+                <li class="fragment">Incremento de seguridad</li>
             </ul>
         </section>
 
         <section>
-            <h2>¿Dónde está DevOps?</h2>
-            <ul>
-                <img class="fragment" src="images/devops-qualities.png" style="background:white"></img>
-            </ul>
+            <h2>¿Cómo?</h2>
+            <div class="myslide">
+                <p>Maximizando, en los procesos operacionales:</p>
+                <ul>
+                    <li class="fragment">Predicibilidad</li>
+                    <li class="fragment">Eficiencia</li>
+                    <li class="fragment">Seguridad</li>
+                    <li class="fragment">Mantenibilidad</li>
+                    <li class="fragment">Automatización</li>
+                </ul>
+            </div>
         </section>
 
         <section>
-            <h2>Objetivos de DevOps</h2>
-            <ul>
-                <li class="fragment">Producir <i>Releases</i> más pequeñas y frecuentes</li>
-                <li class="fragment">Reducir el esfuerzo y los riesgos asociados al desarrollo y operaciones</li>
-                <li class="fragment">Mejorar el <i>Time to market</i></li>
-                <li class="fragment">Mejorar la calidad del código</li>
-                <li class="fragment">Mejorar la calidad de los despliegues</li>
-                <li class="fragment">Reducir los costes y esperas en las iteraciones del producto</li>
-                <li class="fragment">Crear una cultura de comunicación y colaboración</li>
-                <li class="fragment">Incrementar la productividad</li>
-            </ul>
-        </section>
-
-
-        <section>
-            <h2>3 caminos</h2>
-            <ul>
-                <li class="fragment">Camino 1: Mejorar las comunicaciones de Negocio a IT</li>
-                <li class="fragment">Camino 2: Mejorar el <i>feedback</i>de IT a Negocio</li>
-                <li class="fragment">Camino 3: Cultura de experimentación y aprendizaje contínuos</li>
-            </ul>
+            <h3>Ciclo del DevOps</h3>
+            <img src="images/devops-cycle.png"/>
         </section>
 
         <section>
+            <h3>Un devops no es un mago: Necesita apoyo</h3>
+            <img src="images/devops-overview.png"/>
+        </section>
 
+        <section>
+            <h2>Los 3 caminos</h2>
+        </section>
+
+        <section>
+            <h2>Camino 1</h2>
+            <img src="images/way-1.png"/>
+            <p class="myslide">Comprender e incrementar el flujo de trabajo (de izquierda a
+derecha)</p>
+        </section>
+
+        <section>
+            <h2>Camino 2</h2>
+            <img src="images/way-2.png"/>
+            <p class="myslide">Crear pequeños flujos de <i>feedback</i> que permitan la mejora
+contínua (de derecha a izquierda)</p>
+        </section>
+        
+        <section>
+            <h2>Camino 3</h2>
+            <img src="images/way-3.png"/>
+            <p class="myslide">Crear una cultura que promueva:
+                <ul>
+                    <li>La experimentación, afrontar riesgos y aprender de los
+errores.</li>
+                    <li>Comprender que la repetición y la práctica son los
+requisitos para la perfección</li>
+                </ul>
+            </p>
+        </section>
+
+        <section>
+            <h2>Three ways</h2>
+            <img src="images/three-ways.png"/>
         </section>
 
         <section>
             <h2>Más información</h2>
-            <ul>
-                <li><a href="http://itrevolution.com/the-three-ways-principles-underpinning-devops/">The Three Ways: The Principles Underpinning DevOps</a>, by Gene Kim</li>
-                <li>"The Devops Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations", by Gene Kim y otros</li>
-                <li>"The Phoenix Project", by Gene Kim</li>
-            </ul>
+            <div class="myslide">
+                <ul>
+                    <li><a href="http://itrevolution.com/the-three-ways-principles-underpinning-devops/">The Three Ways: The Principles Underpinning DevOps</a>, by Gene Kim</li>
+                    <li>"The Devops Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations", by Gene Kim y otros</li>
+                    <li>"The Phoenix Project", by Gene Kim</li>
+                </ul>
+            </section>
+          </div>
       </div>
     </div>
 	    
@@ -191,6 +215,7 @@
          ]
       });
     </script>
+
 
   </body>
 </html>
